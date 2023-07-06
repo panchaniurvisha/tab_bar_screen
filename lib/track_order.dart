@@ -25,8 +25,8 @@ class _TrackOrderState extends State<TrackOrder> {
             physics: const BouncingScrollPhysics(),
             child: Column(
               children: [
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Icon(
                       Icons.arrow_back,
                       color: Color(0xff1E1E1E),
@@ -64,10 +64,10 @@ class _TrackOrderState extends State<TrackOrder> {
                             bottomLeft: Radius.circular(10),
                           ),
                           color: Color(0x1affffff)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(20.0),
+                      child: const Padding(
+                        padding: EdgeInsets.all(20.0),
                         child: Row(
-                          children: const [
+                          children: [
                             Text(
                               "Order ID:",
                               style: TextStyle(
@@ -105,7 +105,7 @@ class _TrackOrderState extends State<TrackOrder> {
                   ],
                 ),
                 ListView.separated(
-                  padding: EdgeInsets.only(top: 40, bottom: 40),
+                  padding: const EdgeInsets.only(top: 40, bottom: 40),
                   itemCount: data.length,
                   separatorBuilder: (context, index) => const SizedBox(
                     height: 80,
@@ -155,9 +155,9 @@ class _TrackOrderState extends State<TrackOrder> {
                     const SizedBox(
                       width: 20,
                     ),
-                    Column(
+                    const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(
                           "Delivery Address",
                           style: TextStyle(
@@ -201,9 +201,9 @@ class _TrackOrderState extends State<TrackOrder> {
                       const SizedBox(
                         width: 20,
                       ),
-                      Column(
+                      const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             "Write a Review",
                             style: TextStyle(

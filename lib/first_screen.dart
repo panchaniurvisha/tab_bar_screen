@@ -95,8 +95,8 @@ class _FirstScreenState extends State<FirstScreen> {
             Container(
               height: 50,
               color: const Color(0x26767BFF),
-              child: Row(
-                children: const [
+              child: const Row(
+                children: [
                   Icon(
                     Icons.navigate_before_rounded,
                     size: 40,
@@ -126,11 +126,11 @@ class _FirstScreenState extends State<FirstScreen> {
                     height: 75,
                     width: 75,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 16, right: 40),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 16, right: 40),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(
                           "Agustín",
                           style: TextStyle(
